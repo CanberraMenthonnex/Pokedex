@@ -1,7 +1,7 @@
 # POKEMON POKEDEX WEB APPLICATION 
 
 ## Table of contents 
-<hr><br>
+<br>
 
 1. [Description](#description)
 2. [How to install](#how-to-install)
@@ -12,7 +12,7 @@
 7. [License](#license)
 
 ## Description
-<hr><br>
+<br>
 
 This application allows the user to search for some data about a Pokemon thanks to the [Poke Api](https://pokeapi.co/)
 
@@ -29,7 +29,7 @@ We hope to implement in the near future the followed features :
 
 
 ## How to install
-<hr><br>
+<br>
 
 ```
 npm install
@@ -39,25 +39,25 @@ npm start
 ```
 
 ## How to build
-<hr><br>
+<br>
 
 ```
 npm run build
 ```
 
 ## How to open
-<hr><br>
+<br>
 
 Open http://localhost:3000
 
 ## Requirements
-<hr><br>
+<br>
 
 - node version >= 14.0.0
 - npm version > 5.6 
 
 ## Credits
-<hr><br>
+<br>
 
 <table>
     <tr>
@@ -90,6 +90,6 @@ Open http://localhost:3000
 
 
 ## License
-<hr><br>
+<br>
 
 Licensed under the terms of <a href="https://opensource.org/licenses/MIT"><b>MIT</b></a> license 
