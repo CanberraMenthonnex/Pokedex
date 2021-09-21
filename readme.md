@@ -40,7 +40,7 @@ Open http://localhost:3000
         <td align="center">
             <a href="https://github.com/Ericar974">
                 <img src="https://avatars.githubusercontent.com/u/70965684?s=100&v=4" height="100" witdh="100"/><br>
-                <b>@Ericar974</b>
+                <b>Armand Dorard</b>
             </a>
         </td>
         <td align="center">
