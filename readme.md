@@ -1,7 +1,18 @@
 # POKEMON POKEDEX WEB APPLICATION 
 
 ## Description
-This application allow the user to search for some data about a Pokemon thanks to the [Poke Api](https://pokeapi.co/)
+This application allows the user to search for some data about a Pokemon thanks to the [Poke Api](https://pokeapi.co/)
+
+The application uses Poke API because it provides a lot of useful informations about pokemons. 
+
+The application is based on React library in order to have a reactive app without coding too many processes (like state system, UI auto-update ...).
+
+We hope to implement in the near future the followed features :
+
+- Search system by words
+- Search system by pokemon types
+- "Favorite Pokemons" page (which groups all prefered pokemons of the user)
+- Pokemon description page
 
 
 ## How to install
