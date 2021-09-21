@@ -1,11 +1,35 @@
 # POKEMON POKEDEX WEB APPLICATION 
 
+## Table of contents 
+<br>
+
+1. [Description](#description)
+2. [How to install](#how-to-install)
+3. [How to build](#how-to-build)
+4. [How to open](#how-to-open)
+5. [Requirements](#requirements)
+6. [Credits](#credits)
+7. [License](#license)
+
 ## Description
-This application allow the user to search for some data about a Pokemon thanks to the [Poke Api](https://pokeapi.co/)
+<br>
+
+This application allows the user to search for some data about a Pokemon thanks to the [Poke Api](https://pokeapi.co/)
+
+The application uses Poke API because it provides a lot of useful informations about pokemons. 
+
+The application is based on React library in order to have a reactive app without coding too many processes (like state system, UI auto-update ...).
+
+We hope to implement in the near future the followed features :
+
+- Search system by words
+- Search system by pokemon types
+- "Favorite Pokemons" page (which groups all prefered pokemons of the user)
+- Pokemon description page
 
 
 ## How to install
-<hr><br>
+<br>
 
 ```
 npm install
@@ -15,25 +39,25 @@ npm start
 ```
 
 ## How to build
-<hr><br>
+<br>
 
 ```
 npm run build
 ```
 
 ## How to open
-<hr><br>
+<br>
 
 Open http://localhost:3000
 
 ## Requirements
-<hr><br>
+<br>
 
 - node version >= 14.0.0
 - npm version > 5.6 
 
 ## Credits
-<hr><br>
+<br>
 
 <table>
     <tr>
@@ -66,6 +90,6 @@ Open http://localhost:3000
 
 
 ## License
-<hr><br>
+<br>
 
 Licensed under the terms of <a href="https://opensource.org/licenses/MIT"><b>MIT</b></a> license 
