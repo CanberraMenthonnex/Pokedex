@@ -35,15 +35,37 @@ Open http://localhost:3000
 ## Credits
 <hr><br>
 
-- [Armand Dorard](https://github.com/Ericar974)![armand_pp](https://avatars.githubusercontent.com/u/70965684?s=100&v=4)
-
-- [Canberra Menthonnex](https://github.com/CanberraMenthonnex) ![canberra_pp](https://avatars.githubusercontent.com/u/70761366?v=4)
-
-- [Lucas Daval](https://github.com/LucasDaval) ![lucas_pp](https://avatars.githubusercontent.com/u/70761367?s=100&v=4)
-
-- [Mathieu Raimbault](https://github.com/Mario2206) ![mathieu_pp](https://avatars.githubusercontent.com/u/60718973?s=100&v=4)
+<table>
+    <tr>
+        <td align="center">
+            <a href="https://github.com/Ericar974">
+                <img src="https://avatars.githubusercontent.com/u/70965684?s=100&v=4" height="100" witdh="100"/><br>
+                <b>Armand Dorard</b>
+            </a>
+        </td>
+        <td align="center">
+            <a href="https://github.com/CanberraMenthonnex">
+                <img src="https://avatars.githubusercontent.com/u/70761366?v=4" height="100" witdh="100"/><br>
+                <b>Canberra Menthonnex</b>
+            </a>
+        </td>
+        <td align="center">
+            <a href="https://github.com/LucasDaval">
+                <img src="https://avatars.githubusercontent.com/u/70761367?s=100&v=4" height="100" witdh="100"/><br>
+                <b>Lucas Daval</b>
+            </a>
+        </td>
+        <td align="center">
+            <a href="https://github.com/Mario2206">
+                <img src="https://avatars.githubusercontent.com/u/60718973?s=100&v=4" height="100" witdh="100"/><br>
+                <b>Mathieu Raimbault</b>
+            </a>
+        </td>
+    </tr>
+</table>
 
 
 ## License
 <hr><br>
-MIT 
+
+Licensed under the terms of <a href="https://opensource.org/licenses/MIT"><b>MIT</b></a> license 
