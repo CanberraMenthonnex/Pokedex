@@ -1,6 +1,19 @@
 # POKEMON POKEDEX WEB APPLICATION 
 
+## Table of contents 
+<hr><br>
+
+1. [Description](#description)
+2. [How to install](#how-to-install)
+3. [How to build](#how-to-build)
+4. [How to open](#how-to-open)
+5. [Requirements](#requirements)
+6. [Credits](#credits)
+7. [License](#license)
+
 ## Description
+<hr><br>
+
 This application allows the user to search for some data about a Pokemon thanks to the [Poke Api](https://pokeapi.co/)
 
 The application uses Poke API because it provides a lot of useful informations about pokemons. 
