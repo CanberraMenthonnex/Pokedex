@@ -49,6 +49,7 @@
   padding: 5px 10px;
   color: white;
   border-radius: 5px;
+  margin: 0 5px;
 }
 
 .pokedex-footer {
@@ -171,4 +172,16 @@
   width: 15px;
   height: 15px;
   clip-path: polygon(0 0%, 100% 50%, 0 100%);
+}
+
+.pokemon-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pokemon-footer {
+  padding: 20px 0;
+}
+.pokemon-footer img {
+  width: 20vw;
 }

@@ -1,39 +1,37 @@
 import './App.css';
 import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom"
 import { PokemonList } from './components/pokemonList';
-import { useState, useEffect } from 'react';
-import {getListPokemon, getDataPokemon} from './services/index';
+import { PokemonFooter } from './components/pokemonFooter';
 
 
 function App() {
     
   return (
     <Router>
-      <div class="circle-container">
-        <div class="circle red"></div>
-        <div class="circle yellow"></div>
-        <div class="circle green"></div>
+      <div className="circle-container">
+        <div className="circle red"></div>
+        <div className="circle yellow"></div>
+        <div className="circle green"></div>
       </div>
       
-      <div class="h1-containter">
-        <div class="circleBigCircle white">
-          <div class="bigCircle blue"></div>
+      <div className="h1-containter">
+        <div className="circleBigCircle white">
+          <div className="bigCircle blue"></div>
         </div>
         <h1>Pokedex</h1>
       </div>
       
       <nav>
-        <Link class="App-link" to="/">Accueil</Link>
-        <Link class="App-link" to="list">Liste de pokemons</Link>
+        <Link className="App-link" to="/">Accueil</Link>
+        <Link className="App-link" to="list">Liste de pokemons</Link>
       </nav>
 
       <Switch>
         <Route path="/list">
-
           <PokemonList />
         </Route>
         <Route>
-          <div class="img-container">
+          <div className="img-container">
             <img src="pika.png" alt="pikachu"/>
             <div>
               This application allows the user to search for some data about a Pokemon thanks to the Poke Api
@@ -46,6 +44,7 @@ function App() {
           </div>
         </Route>
       </Switch>
+      <PokemonFooter />
     </Router>
   );
 }
