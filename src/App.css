@@ -1,6 +1,12 @@
 * {
   box-sizing: border-box;
 }
+
+
+.flex{
+    display: flex;
+}
+
 .pokedex {
   background-color: #C00C0C;
   min-height: 100vh;
@@ -71,8 +77,12 @@
 }
 
 .App-link {
-  color: #e6c42e;
+  padding: 10px;
+  color: black;
   margin: 1vw;
+  text-decoration: none;
+  border-radius: 2px ;
+  border: solid;
 }
 
 .pokedex-button {
@@ -141,7 +151,7 @@
 }
 
 .blue{
-  background-color: rgb(47, 186, 201);
+  background-color: #28B4FA;
 }
 
 .red{
@@ -184,4 +194,16 @@
 }
 .pokemon-footer img {
   width: 20vw;
+}
+
+.pokemon-description {
+    background-color: white;
+    margin-left: 50px;
+    padding: 30px;
+    border-radius: 40px;
+    border: 10px solid #B1B1B1;
+}
+
+.div-base-stat{
+    margin-left: 10px;
 }

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { PokemonItem } from "./pokemonItem"
 import { getListPokemon, getDataPokemon } from "../services/pokemonService";
 import { POKEMON_BY_PAGE } from "../constants/pokemon";
-
+import {PokemonDescription} from "./pokemonDescription"
 export function PokemonList() {
 
     const [pokemons, setPokemons] = useState([]);
@@ -41,9 +41,11 @@ export function PokemonList() {
         })
     }
 
+    console.log(pokemons)
+
     return (
         <div className="pokedex">
-            <h2 className="pokedex-title">Liste des pokemons</h2>
+            <h2 className="pokedex-title">Liste des Pokemon</h2>
             <div className="pokedex-screen">
                 <div className="pokemon-list" style={{transform: `translateX(-${index * 30}vw)`}}>
                     {
@@ -52,7 +54,13 @@ export function PokemonList() {
                         ))
                     }
                 </div>
-            </div>
+
+                {
+                    pokemons.length > 0 && <PokemonDescription id={pokemons[index].name} stats={pokemons[index].stats} types={pokemons[index].types}/>
+                }
+                
+                
+            </div> 
             <div className="pokedex-footer">
                 <div className="pokedex-id">
                     {
