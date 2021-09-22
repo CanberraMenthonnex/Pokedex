@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { PokemonItem } from "./pokemonItem"
 import { getListPokemon, getDataPokemon } from "../services";
+import { PokemonDescription } from "./pokemonDescription"
 
 export function PokemonList() {
 
@@ -29,18 +30,28 @@ export function PokemonList() {
         })
     }
 
+    console.log(pokemons)
+
     return (
         <div className="pokedex">
             <h2 className="pokedex-title">Liste des pokemons</h2>
-            <div className="pokedex-screen">
-                <div className="pokemon-list" style={{transform: `translateX(-${index * 30}vw)`}}>
-                    {
-                        pokemons.map((pokemon) => (
-                            <PokemonItem id={pokemon.id} key={pokemon.id} name={pokemon.name} types={pokemon.types} />
-                        ))
-                    }
+            <div class="flex">
+                <div className="pokedex-screen">
+                    <div className="pokemon-list" style={{transform: `translateX(-${index * 30}vw)`}}>
+                        {
+                            pokemons.map((pokemon) => (
+                                <PokemonItem id={pokemon.id} key={pokemon.id} name={pokemon.name} types={pokemon.types} />
+                            ))
+                        }
+                    </div>
                 </div>
-            </div>
+
+                {
+                    pokemons.length > 0 && <PokemonDescription id={pokemons[index].name} stats={pokemons[index].stats} types={pokemons[index].types}/>
+                }
+                
+                
+            </div> 
             <div className="pokedex-footer">
                 <div className="pokedex-id">
                     {
