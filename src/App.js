@@ -6,17 +6,6 @@ import {getListPokemon, getDataPokemon} from './services/index';
 
 
 function App() {
-
-    const [post, setPost] = useState();
-
-
-    useEffect(() => {
-        getListPokemon(0,10).then((response) => {            
-            return Promise.all(response.data.results.map(pokemon => getDataPokemon(pokemon.url).then(data => data.data)))            
-        }).then(pokemons => setPost(pokemons));
-    }, []);
-
-    console.log(post);
     
   return (
     <Router>

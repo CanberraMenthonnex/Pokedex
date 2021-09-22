@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.pokedex {
+  background-color: #C00C0C;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-bottom: 100px;
+}
+.pokedex-title {
   color: white;
+  font-size: 25px;
+}
+.pokedex-screen {
+  width: 30vw;
+  height: 30vw;
+  overflow: hidden;
+  position: relative;
+  border-radius: 40px;
+  border: 10px solid #B1B1B1;
+}
+.pokemon-list {
+  display: flex;
+  position: absolute;
+  justify-items: center;
+  transition: 1s;
 }
 
-.App-link {
-  color: #61dafb;
+.pokemon-list .pokemon-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: white;
+  width: 30vw;
+  height: 30vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pokemon-list .pokemon-list h3 {
+  text-align: center;
+}
+
+.pokemon-list .pokemon-item .pokemon-type {
+  display: inline-block;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+.pokedex-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 30vw;
+  padding-top: 50px;
+  align-items: center;
+}
+
+.pokedex-id {
+  border: 4px solid #006D64;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.pokedex-button {
+  display: flex;
+}
+
+.pokedex-button button {
+  background-color: #222222;
+  border-radius: 20px;
+  width: 50px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.pokedex-button button:first-child::after {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  clip-path: polygon(100% 0, 100% 100%, 0 50%);
+}
+.pokedex-button button:last-child::after {
+  content: "";
+  display: block;
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  clip-path: polygon(0 0%, 100% 50%, 0 100%);
 }
