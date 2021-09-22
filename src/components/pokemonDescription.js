@@ -2,7 +2,7 @@
 
 
 export function PokemonDescription({id, stats, types}){
-
+    console.log("test");
     return(
         <aside className="pokemon-description">
             <div>

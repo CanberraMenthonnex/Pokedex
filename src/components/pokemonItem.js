@@ -8,7 +8,7 @@ export function PokemonItem({name, types, id}) {
             <h3>{name}</h3>
             <footer>
                 {
-                    types.map((type, index) => (
+                    types.map(({type}, index) => (
                         <PokemonType key={index} type={type.name} />
                     ))
                 }

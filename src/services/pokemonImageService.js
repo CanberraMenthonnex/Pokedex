@@ -1,3 +1,9 @@
+/**
+ * Generate pokemon image url
+ * 
+ * @param {string} pokemonId 
+ * @returns 
+ */
 export function fetchPokemonImage(pokemonId) {
     const idParts = String(pokemonId).split("")
     const supRef = []

@@ -1,30 +1,41 @@
 import { useState, useEffect } from "react"
 import { PokemonItem } from "./pokemonItem"
-import { getListPokemon, getDataPokemon } from "../services";
-import { PokemonDescription } from "./pokemonDescription"
-
+import { getListPokemon, getDataPokemon } from "../services/pokemonService";
+import { POKEMON_BY_PAGE } from "../constants/pokemon";
+import {PokemonDescription} from "./pokemonDescription"
 export function PokemonList() {
 
     const [pokemons, setPokemons] = useState([]);
     const [index, setIndex] = useState(0)
+    const [isLoading, setIsLoading] = useState(false)
 
     useEffect(() => {
         if(index < pokemons.length - 1) {
             return 
         }
-        getListPokemon(0,10).then((response) => {            
-            return Promise.all(response.data.results.map(pokemon => getDataPokemon(pokemon.url).then(data => data.data)))            
-        })
-        .then(pokemons => setPokemons(prev => [...prev, ...pokemons]));
+        const refIndex = index === 0 ? index : index + 1
+        setIsLoading(true)
+        getListPokemon(((refIndex / POKEMON_BY_PAGE) * POKEMON_BY_PAGE), POKEMON_BY_PAGE)
+        .then((response) =>  
+            Promise.all(response.data.results.map(pokemon => 
+                getDataPokemon(pokemon.url)
+                    .then(data => data.data))
+            )            
+        )
+        .then(pokemons => {
+            setPokemons(prev => [...prev, ...pokemons])
+            setIsLoading(false)
+        });
     }, [index]);
 
-   
 
     const prevItem = () => {
+        if(isLoading) return
         setIndex(index => index > 0 ? index - 1 : 0)
     }
 
     const nextItem = () => {
+        if(isLoading) return
         setIndex(index => {
             return index + 1
         })
