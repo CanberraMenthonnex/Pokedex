@@ -31,7 +31,7 @@ export function PokemonList() {
 
     return (
         <div className="pokedex">
-            <h2 className="pokedex-title">Liste des pokemons</h2>
+            <h2 className="pokedex-title">Liste des Pokemon</h2>
             <div className="pokedex-screen">
                 <div className="pokemon-list" style={{transform: `translateX(-${index * 30}vw)`}}>
                     {
