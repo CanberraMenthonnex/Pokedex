@@ -76,8 +76,12 @@
 }
 
 .App-link {
-  color: #e6c42e;
+  padding: 10px;
+  color: black;
   margin: 1vw;
+  text-decoration: none;
+  border-radius: 2px ;
+  border: solid;
 }
 
 .pokedex-button {
@@ -146,7 +150,7 @@
 }
 
 .blue{
-  background-color: rgb(47, 186, 201);
+  background-color: #28B4FA;
 }
 
 .red{
